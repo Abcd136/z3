@@ -148,7 +148,8 @@
             font-size: 15px;
             color: #666;
         }
-        body {
+
+        {
     font-family: Arial, sans-serif;
   }
   .comment-section {
@@ -176,7 +177,6 @@
     padding: 10px 20px;
     cursor: pointer;
   }
-  {
     
     </style>
 </head>
@@ -194,7 +194,15 @@
         </div>
     </div>
         
-电脑VPN的问题
+<h3>关于电脑VPN的问题</h3>
+        <p>
+<div class="comment-section">
+  <h1>评论内容</h1>
+  <ul class="comment-list" id="comment-list">
+    <!-- Comments will be added here -->
+  </ul>
+
+  
 
     <div class="bottom-nav">
         
@@ -231,6 +239,30 @@
         theme="github-light"
         crossorigin="anonymous"
         async>
+  </script>
+
+<script>
+function addComment() {
+  var name = document.getElementById('name').value;
+  var comment = document.getElementById('comment').value;
+  var commentList = document.getElementById('comment-list');
+
+  if (name === "" || comment === "") {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  // Create a new list item with the comment
+  var newComment = document.createElement('li');
+  newComment.innerHTML = '<b>' + name + ':</b> ' + comment;
+
+  // Add the new comment to the list
+  commentList.appendChild(newComment);
+
+  // Clear the form
+  document.getElementById('name').value = '';
+  document.getElementById('comment').value = '';
+}
 </script>
         
 </body>
