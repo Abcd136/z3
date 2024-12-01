@@ -149,41 +149,38 @@
             color: #666;
         }
 
-        {
-    font-family: Arial, sans-serif;
-  }
-  .comment-section {
-    margin: 20px;
-  }
-  .comment-list {
-    list-style: none;
-    padding: 0;
-  }
-  .comment-list li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  .comment-form {
-    margin-top: 20px;
-  }
-  .comment-form input[type="text"],
-  .comment-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  .comment-form button {
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-    
+        .comment-section {
+            margin: 20px;
+        }
+        .comment-list {
+            list-style: none;
+            padding: 0;
+        }
+        .comment-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .comment-form {
+            margin-top: 20px;
+        }
+        .comment-form input[type="text"],
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .comment-form button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="search-bar">
-            
+            <!-- Search bar content goes here -->
+        </div>
         <div class="nav-tabs">
             <a href="https://abcd136.github.io/z/" class="nav-item active">推荐</a>
             <a href="https://abcd136.github.io/f/" class="nav-item">导航</a>
@@ -194,46 +191,53 @@
         </div>
     </div>
 
-    
+    <div class="app-list">
         <div class="app-item">
-            
+            <div class="app-icon">
+                <!-- App icon goes here -->
+            </div>
             <div class="app-info">
                 <div class="app-name">
                     <a href="https://abcd136.github.io/x22/" style="color: black; text-decoration: none;">电脑VPN的问题</a>
-            </div>
+                </div>
                 <div class="app-category"></div>
                 <div class="rating">3.8 ★ <span class="app-size">350人觉得很赞</span></div>
             </div>
         </div>
-
-        <div class="app-info">
+        <div class="app-item">
+            <div class="app-icon">
+                <!-- App icon goes here -->
+            </div>
+            <div class="app-info">
                 <div class="app-name">
                     <a href="https://abcd136.github.io/x30/" style="color: black; text-decoration: none;">猫咪社区的问题</a>
-            </div>
+                </div>
                 <div class="app-category"></div>
                 <div class="rating">2.6 ★ <span class="app-size">280人觉得很赞</span></div>
             </div>
+        </div>
         
-
-       <div class="app-info">
+        <div class="app-item">
+            <div class="app-icon">
+                <!-- App icon goes here -->
+            </div>
+            <div class="app-info">
                 <div class="app-name">
                     <a href="https://files.catbox.moe/p13kjz.txt" style="color: black; text-decoration: none;">经典修仙色文《美女图》</a>
-            </div>
+                </div>
                 <div class="app-category"></div>
-                <div class="rating">6.8 ★ <span class="app-size">126953537人觉得很赞</span></div>
+                <div class="rating">2.6 ★ <span class="app-size">19387456280人觉得很赞</span></div>
             </div>
-
+        </div>
         
     </div>
-  
 
     <div class="bottom-nav">
-        
         <div class="bottom-nav-item" onclick="toggleNav()">
             <div>📱</div>
             <div>
                 <a href="https://abcd136.github.io/z/" style="color: black; text-decoration: none;">应用</a>
-                </div>
+            </div>
         </div>
         <div class="bottom-nav-item" onclick="toggleNav()">
             <div>🎮</div>
@@ -247,8 +251,7 @@
                 <a href="https://abcd136.github.io/z2/" style="color: black; text-decoration: none;">工具</a>
             </div>
         </div>
-    
-    <div class="bottom-nav-item" onclick="toggleNav()">
+        <div class="bottom-nav-item" onclick="toggleNav()">
             <div>💬</div>
             <div>
                 <a href="https://abcd136.github.io/z3/" style="color: black; text-decoration: none;">评论</a>
@@ -256,5 +259,11 @@
         </div>
     </div>
         
+    <script>
+        function toggleNav() {
+            // JavaScript code to toggle navigation
+            console.log('Navigation toggled');
+        }
+    </script>
 </body>
 </html>
